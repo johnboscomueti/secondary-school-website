@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>School Media Page</title>
+  <style>
+    /* CSS styles for the media page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      margin-right: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #media-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .media-item {
+      flex-basis: 200px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .media-item img {
+      width: 100%;
+      height: auto;
+      max-height: 150px;
+      object-fit: cover;
+    }
+
+    .larger-container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 500px;
+      height: 500px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      display: none;
+      z-index: 999;
+      padding: 20px;
+    }
+
+    .category-menu {
+      position: fixed;
+      top: 50px;
+      right: 20px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      display: none;
+      z-index: 999;
+    }
+
+    .category-menu a {
+      display: block;
+      padding: 5px 10px;
+      text-decoration: none;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .category-menu a:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../images/LOGO.png" alt="School Logo" width="50">
+    </div>
+    <h1> NDALUNI SECONDARY School Media Page</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="../html/about.html">About</a></li>
+        <li><a href="../html/media.html">Media</a></li>
+        <li><a href="../html/contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="media-container">
+    <div class="media-item">
+      <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+      <h4>Title 1</h4>
+    </div>
+    <div class="media-item">
+      <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+      <h4>Title 2</h4>
+    </div>
+    <div class="media-item">
+      <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+      <h4>Title 3</h4>
+    </div>
+    <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+      <div class="media-item">
+        <img src="image1.jpg" alt="Image 1" onclick="showLargerContainer('image1.jpg', 'Title 1')">
+        <h4>Title 1</h4>
+      </div>
+      <div class="media-item">
+        <img src="image2.jpg" alt="Image 2" onclick="showLargerContainer('image2.jpg', 'Title 2')">
+        <h4>Title 2</h4>
+      </div>
+      <div class="media-item">
+        <img src="image3.jpg" alt="Image 3" onclick="showLargerContainer('image3.jpg', 'Title 3')">
+        <h4>Title 3</h4>
+      </div>
+    <!-- Add more media items as needed -->
+  </div>
+
+  <div class="larger-container" id="larger-container">
+    <img src="" alt="" id="larger-image">
+    <h2 id="larger-title"></h2>
+  </div>
+
+  <div class="category-menu" id="category-menu">
+    <a href="#sports">Sports</a>
+    <a href="#school">General School</a>
+    <a href="#events">Events</a>
+  </div>
+
+  <script>
+    // JavaScript for the media page
+    function showLargerContainer(imageSrc, title) {
+      document.getElementById('larger-image').src = imageSrc;
+      document.getElementById('larger-title').textContent = title;
+      document.getElementById('larger-container').style.display = 'block';
+    }
+
+    window.addEventListener('click', function(event) {
+      if (!event.target.matches('.larger-container') && !event.target.matches('.media-item img')) {
+        document.getElementById('larger-container').style.display = 'none';
+      }
+      if (event.target.matches('.category-scroll')) {
+        document.getElementById('category-menu').style.display = 'block';
+      } else {
+        document.getElementById('category-menu').style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

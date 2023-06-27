@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our School</title>
+  <style>
+    /* CSS styles for the homepage */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #slideshow-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    #slideshow-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #slideshow-container img.active {
+      opacity: 1;
+    }
+    /* Logo styles */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    /* Title styles */
+    .title {
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Address styles */
+    .address {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    /* Navigation bar styles */
+    .navbar {
+      background-color: #f5f5f5;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .navbar .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: #333;
+      padding: 14px 16px;
+      background-color: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #ddd;
+    }
+
+    .navbar .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .navbar .dropdown-content a {
+      float: none;
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .navbar .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .navbar .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .container {
+      width: 1000px;
+      
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      background-color: #f5f5f5;
+      color: #333;
+      padding-top: 100px;
+    }
+
+    .image {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+
+    .text {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+    <div id="slideshow-container">
+        <img class="active" src="../images/LYDIA.PNG" alt="Slide 1">
+        <img src="../images/fm 2" alt="Slide 2">
+        <img src="../images/GIRLS DOM.JPG" alt="Slide 3">
+        <img src="../images/assembly.jpeg" alt="Slide 3">
+        <img src="../images/me in ndaluni.jpg" alt="Slide 3">
+        <img src="../images/ASS.JPG" alt="Slide 3">
+      </div>
+    
+      <!-- Rest of your HTML content goes here -->
+    
+      <script>
+        // JavaScript for the slideshow background
+        const slideshowImages = document.querySelectorAll('#slideshow-container img');
+        let currentImageIndex = 0;
+    
+        function showNextImage() {
+          slideshowImages[currentImageIndex].classList.remove('active');
+          currentImageIndex = (currentImageIndex + 1) % slideshowImages.length;
+          slideshowImages[currentImageIndex].classList.add('active');
+        }
+    
+        setInterval(showNextImage, 3000); // Change slide every 3 seconds
+      </script>
+  <header>
+    <img class="logo" src="../images/LOGO.png" alt="Logo">
+    <h1 class="title">A.I.C NDALUNI MIXED DAY/BOARDING SECONDARY SCHOOL</h1>
+    <p class="address">P.O.BOX 214-90400.<BR> KITUI, MIGWANI. <BR>NDALUNI</p>
+  </header>
+
+  <nav class="navbar">
+    <a href="#home">Home</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Programs</button>
+      <div class="dropdown-content">
+        <a href="#">mathematis</a>
+        <a href="#">english</a>
+        <a href="#">kiswahili</a>
+        <a href="#">computer studies</a>
+        <a href="#">agricuture</a>
+        <a href="#">french</a>
+        <a href="#">business</a>
+        <a href="#">biology</a>
+        <a href="#">physics</a>
+        <a href="#">geography</a>
+        <a href="#">history</a>
+        <a href="#">C.R.E</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">games offered</button>
+        <div class="dropdown-content">
+          <a href="#">rugby</a>
+          <a href="#">footall</a>
+          <a href="#">hand ball</a>
+          <a href="#">Table tennis</a>
+          <a href="#">tennis</a>
+          <a href="#">badminton</a>
+          <a href="#">chess</a>
+          <a href="#">dart</a>
+        </div>
+      </div>
+      <a href="../html/media.html">school media</a>
+    <a href="../html/contacts.html">Contact</a>
+        <div class="dropdown">
+        <button class="dropbtn">about us</button>
+        <div class="dropdown-content">
+          <a href="../html/about.html">school statistics</a>
+          <a href="../html/about.html">vision & mission</a>
+
+        </div>
+      </div>
+  </nav>
+
+  <section>
+    <!-- Add your homepage content here -->
+
+  </section>
+
+  <footer>
+    <!-- Add your footer content here -->
+  </footer>
+</body>
+</html>

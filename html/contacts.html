@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <style>
+    /* CSS styles for the Contacts page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Logo styles */
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .title {
+      text-align: center;
+      padding: 20px;
+    }
+
+
+    /* Name styles */
+    .name {
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Address styles */
+    .address {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    /* Contact form styles */
+    .contact-form {
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .form-input {
+      margin-bottom: 10px;
+    }
+
+    .chatbox {
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: #f5f5f5;
+    }
+
+    .suggestion-box {
+      margin-top: 20px;
+    }
+
+    /* Footer styles */
+    footer {
+      text-align: center;
+      background-color: #f5f5f5;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    
+    .navbar a {
+      float: left;
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../images/LOGO.png" alt="Logo">
+        <h1 class="title">A.I.C NDALUNI MIXED DAY/BOARDING SECONDARY SCHOOL <BR>
+            
+            CONTACT US
+        </h1>
+        <p class="address">P.O.BOX 214-90400.<BR> KITUI, MIGWANI. <BR>NDALUNI</p>
+      </header>
+      <nav class="navbar">
+        <a href="../html/home.html">Home</a>
+        <a href="../html/about.html">About Us</a>
+      </nav>
+    
+
+  <div class="contact-form">
+    <div class="chatbox">
+      <h2>Chat with Us</h2>
+      <form>
+        <div class="form-input">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" required>
+        </div>
+
+        <div class="form-input">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" required>
+        </div>
+
+        <div class="form-input">
+          <label for="admissionID">Admission/ID:</label>
+          <input type="text" id="admissionID" required>
+        </div>
+
+        <div class="form-input">
+          <label for="gmail">Gmail:</label>
+          <input type="email" id="gmail" required>
+        </div>
+
+        <div class="form-input">
+          <label for="mobileNumber">Mobile Number:</label>
+          <input type="tel" id="mobileNumber" required>
+        </div>
+
+        <div class="form-input">
+          <label for="department">Department:</label>
+          <select id="department">
+            <option value="admission">Admission</option>
+            <option value="general">General Inquiry</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="suggestion-box">
+      <h2>Suggestion Box</h2>
+      <textarea rows="4" cols="50"></textarea>
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+
+  <footer>
+    <!-- Add your footer content here -->
+  </footer>
+</body>
+</html>
